@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.custom-label input:checked + label {
+		@apply bg-blue-600;
+	}
+	.custom-label input:checked + label svg {
+		@apply opacity-100;
+	}
+}
