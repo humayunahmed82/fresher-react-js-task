@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import Item from "./components/Item";
+import GalleryItem from "./components/GalleryItem";
 import ItemsRow from "./ui/ItemsRow";
 import FilesSelected from "./ui/FilesSelected";
 
@@ -116,7 +116,7 @@ const App = () => {
 			<ItemsRow>
 				{imageItem.map((image, index) => (
 					<div className="p-3 first:col-span-2 first:row-span-2" key={image.id}>
-						<Item
+						<GalleryItem
 							image={image}
 							handelSort={handelSort}
 							handelChecked={handelChecked}

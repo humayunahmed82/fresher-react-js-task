@@ -1,6 +1,6 @@
-import Checkbox from "../ui/checkbox";
+import CheckBoxStyle from "../ui/CheckBoxStyle";
 
-const Item = ({
+const GalleryItem = ({
 	image,
 	handelSort,
 	dragStart,
@@ -28,7 +28,7 @@ const Item = ({
 					selectedId ? "opacity-100" : ""
 				} `}
 			>
-				<Checkbox
+				<CheckBoxStyle
 					id={image.id}
 					onChangeHandel={() => handelChecked(image.id)}
 					isChecked={selectedId}
@@ -38,4 +38,4 @@ const Item = ({
 	);
 };
 
-export default Item;
+export default GalleryItem;

@@ -1,4 +1,4 @@
-const Checkbox = ({ id, onChangeHandel, isChecked }) => {
+const CheckBoxStyle = ({ id, onChangeHandel, isChecked }) => {
 	return (
 		<>
 			<input
@@ -27,4 +27,4 @@ const Checkbox = ({ id, onChangeHandel, isChecked }) => {
 	);
 };
 
-export default Checkbox;
+export default CheckBoxStyle;

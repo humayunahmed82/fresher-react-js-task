@@ -1,10 +1,10 @@
-import Checkbox from "./checkbox";
+import CheckBoxStyle from "./CheckBoxStyle";
 
 const FilesSelected = ({ selectedItem, onHandelAll }) => {
 	return (
 		<div className="flex items-center">
 			<div className="flex-shrink-0 custom-label">
-				<Checkbox
+				<CheckBoxStyle
 					id="all"
 					onChangeHandel={onHandelAll}
 					isChecked={selectedItem.length !== 0 && true}
