@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import GalleryItem from "./components/GalleryItem";
 import ItemsRow from "./ui/ItemsRow";
 import FilesSelected from "./ui/FilesSelected";
+import FileUpload from "./ui/FileUpload";
+import GalleryBox from "./ui/GalleryBox";
 
 const images = [
 	{
@@ -92,10 +94,12 @@ const App = () => {
 	};
 
 	return (
-		<div className="bg-white max-w-5xl mx-auto mt-4 rounded-lg overflow-hidden">
-			<div className="border-b border-b-gray-300 py-4 px-8 flex justify-between items-center">
+		<GalleryBox>
+			<div className="border-b border-b-gray-300 py-3 sm:py-4 px-6 sm:px-8 flex justify-between items-center">
 				{selectedItem.length === 0 ? (
-					<h2 className="text-[20px] font-semibold text-stone-900">Gallery</h2>
+					<h2 className="text-base sm:text-[20px] font-semibold text-stone-900">
+						Gallery
+					</h2>
 				) : (
 					<>
 						<FilesSelected
@@ -104,7 +108,7 @@ const App = () => {
 						/>
 
 						<button
-							className="text-base text-red-700 font-medium"
+							className="text-sm sm:text-base text-red-700 font-medium transition-all duration-200 ease-linear hover:underline"
 							onClick={handelDeleting}
 						>
 							Delete files
@@ -126,8 +130,11 @@ const App = () => {
 						/>
 					</div>
 				))}
+				<div className="p-3 first:col-span-2 first:row-span-2">
+					<FileUpload />
+				</div>
 			</ItemsRow>
-		</div>
+		</GalleryBox>
 	);
 };
 

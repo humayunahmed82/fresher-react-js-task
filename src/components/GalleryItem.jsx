@@ -12,7 +12,7 @@ const GalleryItem = ({
 
 	return (
 		<div
-			className={`rounded-md border border-gray-300 overflow-hidden relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-stone-900 before:opacity-0 hover:before:opacity-50 before:transition-all before:duration-200 before:ease-linear z-10 group/item ${
+			className={`rounded-md border border-gray-300 overflow-hidden relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-stone-900 before:opacity-0 hover:before:opacity-50 before:transition-all before:duration-200 before:ease-linear z-10 group/item cursor-pointer ${
 				selectedId ? "before:opacity-20" : ""
 			}`}
 			draggable

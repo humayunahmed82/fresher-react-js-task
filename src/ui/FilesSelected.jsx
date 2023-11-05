@@ -10,7 +10,7 @@ const FilesSelected = ({ selectedItem, onHandelAll }) => {
 					isChecked={selectedItem.length !== 0 && true}
 				/>
 			</div>
-			<div className="text-[20px] font-semibold text-stone-900 flex-1 ml-3">
+			<div className="text-base sm:text-[20px] font-semibold text-stone-900 flex-1 ml-3">
 				{selectedItem.length} Files Selects
 			</div>
 		</div>
